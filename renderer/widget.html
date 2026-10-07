@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+  <title>Dog</title>
+  <link rel="stylesheet" href="widget.css">
+</head>
+<body>
+  <div id="wrap">
+    <div id="bubble" class="hit">
+      <div class="b-title"><span class="b-dot"></span><span id="b-title"></span></div>
+      <div class="b-row">
+        <span id="b-time"></span>
+        <button id="b-toggle" class="b-btn" title="Start / pause"></button>
+      </div>
+      <div class="b-bar"><i id="b-bar"></i></div>
+    </div>
+
+    <div id="dog" class="hit sleep" title="Click to open · drag to move · right-click for menu">
+      <div class="zzz"><span>z</span><span>z</span><span>Z</span></div>
+      <svg viewBox="0 0 140 124" width="132" height="117" aria-hidden="true">
+        <ellipse class="shadow" cx="70" cy="117" rx="40" ry="5"/>
+
+        <g class="tail">
+          <path d="M96 100 C116 98 126 80 118 66" stroke="#262626" stroke-width="10" stroke-linecap="round" fill="none"/>
+          <path d="M96 100 C116 98 126 80 118 66" stroke="#dcdcdc" stroke-width="5" stroke-linecap="round" fill="none"/>
+        </g>
+
+        <g class="body">
+          <path d="M40 113 C35 86 48 70 70 70 C92 70 105 86 100 113 Z" fill="#ececec" stroke="#262626" stroke-width="3" stroke-linejoin="round"/>
+          <ellipse cx="70" cy="97" rx="13" ry="12" fill="#fafafa"/>
+          <ellipse cx="80" cy="88" rx="7" ry="5" fill="#cfcfcf"/>
+          <g class="foot foot-l">
+            <ellipse cx="55" cy="112" rx="10.5" ry="6.5" fill="#f7f7f7" stroke="#262626" stroke-width="3"/>
+            <path d="M52 110 v3 M58 110 v3" stroke="#262626" stroke-width="1.6" stroke-linecap="round"/>
+          </g>
+          <g class="foot foot-r">
+            <ellipse cx="85" cy="112" rx="10.5" ry="6.5" fill="#f7f7f7" stroke="#262626" stroke-width="3"/>
+            <path d="M82 110 v3 M88 110 v3" stroke="#262626" stroke-width="1.6" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <g class="tilt">
+          <g class="head">
+            <g class="ear ear-l">
+              <path d="M38 30 C22 30 14 56 22 70 C28 79 40 70 44 52 Z" fill="#6f6f6f" stroke="#262626" stroke-width="3" stroke-linejoin="round"/>
+            </g>
+            <g class="ear ear-r">
+              <path d="M102 30 C118 30 126 56 118 70 C112 79 100 70 96 52 Z" fill="#6f6f6f" stroke="#262626" stroke-width="3" stroke-linejoin="round"/>
+            </g>
+            <ellipse cx="70" cy="46" rx="35" ry="31" fill="#f4f4f4" stroke="#262626" stroke-width="3"/>
+            <ellipse cx="86" cy="40" rx="11" ry="10" fill="#d2d2d2"/>
+            <path d="M62 17 Q70 13 78 17" stroke="#262626" stroke-width="2" fill="none" stroke-linecap="round" opacity=".35"/>
+
+            <g class="eyes">
+              <ellipse class="eye" cx="55" cy="44" rx="5.2" ry="6.4" fill="#161616"/>
+              <ellipse class="eye" cx="85" cy="44" rx="5.2" ry="6.4" fill="#161616"/>
+              <circle cx="56.8" cy="41.6" r="1.9" fill="#fff"/>
+              <circle cx="86.8" cy="41.6" r="1.9" fill="#fff"/>
+            </g>
+            <g class="eyes-closed">
+              <path d="M49 45 Q55 50 61 45" stroke="#161616" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              <path d="M79 45 Q85 50 91 45" stroke="#161616" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+            </g>
+            <g class="eyes-happy">
+              <path d="M49 47 Q55 38 61 47" stroke="#161616" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+              <path d="M79 47 Q85 38 91 47" stroke="#161616" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+            </g>
+
+            <ellipse cx="70" cy="59" rx="15" ry="11" fill="#ffffff"/>
+            <ellipse cx="46" cy="56" rx="5" ry="3" fill="#bdbdbd" opacity=".55"/>
+            <ellipse cx="94" cy="56" rx="5" ry="3" fill="#bdbdbd" opacity=".55"/>
+            <ellipse cx="70" cy="53.5" rx="5.6" ry="4" fill="#161616"/>
+            <ellipse cx="68.4" cy="52.4" rx="1.6" ry="1" fill="#fff" opacity=".8"/>
+            <path class="tongue" d="M66 62 Q66 71 70 71 Q74 71 74 62 Z" fill="#8c8c8c" stroke="#161616" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M70 57.5 V61 M70 61 Q65.5 65.5 61.5 61.5 M70 61 Q74.5 65.5 78.5 61.5" stroke="#161616" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </g>
+        </g>
+
+        <path d="M49 75 Q70 86 91 75" stroke="#262626" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <circle class="tag" cx="70" cy="85" r="4.2" fill="#a8a8a8" stroke="#262626" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+  <script src="widget.js"></script>
+</body>
+</html>

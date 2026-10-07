@@ -1,0 +1,13 @@
+{
+  "name": "todo-dog",
+  "version": "1.0.0",
+  "description": "A Notion-style todo app with per-task timers and a floating desktop dog.",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^44.6.0"
+  }
+}
